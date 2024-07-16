@@ -1,0 +1,36 @@
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in .15s;
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: .15s;
+}
+
+.card .back {
+    transition: all ease-in .15s;
+    /* transition-delay: .2s; */
+    cursor: pointer;
+}
+
+.card .back:hover {
+    box-shadow: goldenrod 0 0 16px;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
